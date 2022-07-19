@@ -97,6 +97,7 @@ aside ul{
     width: 255px;
     height: 350px;
     list-style: none;
+    padding: 0px;
 }
 aside ul div{
     width: 100%;
