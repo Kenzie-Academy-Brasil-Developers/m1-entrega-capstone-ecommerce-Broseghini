@@ -1,64 +1,118 @@
 // Banco de dados dos produtos
 
-const data = [
+const listaDeItens = [
+  {
+    id: 0,
+    img: "./img/camisetaMugiwara.jpg",
+    nameItem: "Camiseta dos Mugiwaras boys",
+    description:
+      "Camiseta dos piratas dos chapéus de palha",
+    value: 100.00,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Camisetas"],
+  },
   {
     id: 1,
-    img: "../img/jaqueta.svg",
-    nameItem: "Lightweight Jacket",
+    img: "./img/PiratasCorazons.jpg",
+    nameItem: "camiseta dos Piratas corazons",
     description:
-      "Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...",
-    value: 100,
+      "Camiseta dos piratas dos Corazons (Law)",
+    value: 100.00,
     addCart: "Adicionar ao carrinho",
     tag: ["Camisetas"],
   },
   {
     id: 2,
-    img: "../img/gorro.svg",
-    nameItem: "Black Hat",
+    img: "./img/databookBlue.jpg",
+    nameItem: "DatabookBlue",
     description:
-      "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...",
-    value: 100,
+      "DataBook com a história completa do East Blue dos chapéus de palha",
+    value: 300.00,
     addCart: "Adicionar ao carrinho",
-    tag: ["Acessórios"],
+    tag: ["Livro"],
   },
   {
     id: 3,
-    img: "../img/mascara.svg",
-    nameItem: "Mask",
+    img: "./img/databookReed.jpg",
+    nameItem: "DatabookRed",
     description:
-      "Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...",
-    value: 40,
+      "Databook RedLine das aventuras dos chapéus de palha",
+    value: 200.00,
     addCart: "Adicionar ao carrinho",
-    tag: ["Acessórios"],
+    tag: ["Livro"],
   },
   {
     id: 4,
-    img: "../img/camiseta_preta.svg",
-    nameItem: "T-Shirt",
+    img: "./img/GoldD..jpg",
+    nameItem: "Action Figure Roger",
     description:
-      "Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...",
-    value: 100,
+      "Boneco do infame Rei dos piratas Gold D. Roger",
+    value: 600.00,
     addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
+    tag: ["Boneco"],
   },
   {
     id: 5,
-    img: "../img/camiseta_branca.svg",
-    nameItem: "Short-Sleeve T-Shirt",
+    img: "./img/irmãosPósSkip.jpg",
+    nameItem: "Action Figure Sisters",
     description:
-      "Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...",
-    value: 100,
+      "O trio de irmãos Ace, Luffy e Sabo pós time skip",
+    value: 900.00,
     addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
-  {
+    tag: ["Boneco"],
+  },{
     id: 6,
-    img: "../img/moletom.svg",
-    nameItem: "Champion Packable Jacket",
+    img: "./img/ThousandSunny.jpg",
+    nameItem: "Barco Sunny",
     description:
-      "Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...",
-    value: 100,
+      "O barco feito especialmente pelo carpinteiro dos futuro rei dos piratas o Thousand Sunny",
+    value: 800.00,
     addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
+    tag: ["Barco"],
+  },{
+    id: 7,
+    img: "./img/GoingMerry.jpg",
+    nameItem: "Going Merry Mugiwaras",
+    description:
+      "O primeiro barco do Luffy onde toda a história de navegação do chapéu de palha iniciou-se",
+    value: 600.00,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Barco"],
+  },{
+    id: 8,
+    img: "./img/quadroDeProcuradoBB.jpg",
+    nameItem: "Quadro de procurado BB",
+    description:
+      "Quadro de procurado do Younkou conhecido como O homem mais fote do mundo, Barba Branca",
+    value: 150.00,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Quadro"],
+  },{
+    id: 9,
+    img: "./img/quadroDeProcuradoLuffy.jpg",
+    nameItem: "Quadro de procurado Luffy",
+    description:
+      "Quadro de procurado do futuro rei dos piratas",
+    value: 150.00,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Quadro"],
+  },{
+    id: 10,
+    img: "./img/óculosDonFlamingo.jpg",
+    nameItem: "Acessórios Don",
+    description:
+      "Óculos do vilão mais amado de todo o anime, sendo o acessório de batalha mais perigoso",
+    value: 500.00,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Acessório"],
+  },{
+    id: 11,
+    img: "./img/chaveiroEspadasZoro.jpg",
+    nameItem: "Chaveiros",
+    description:
+      "Chaveiro das katanas do vice capitão dos Mugiwaras Boys",
+    value: 50.00,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Acessório"],
+  }
 ];
