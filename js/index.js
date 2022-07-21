@@ -31,9 +31,12 @@ let tagFourth = document.createElement("li")
 
 let tagUlSecond = document.createElement("ul")
 
+let tagUlThird  = document.createElement("ul")
+
 let tagMain     = document.createElement("main")
     tagBody.appendChild(tagMain)
     tagMain.appendChild(tagUlSecond)
+    tagMain.appendChild(tagUlThird)
 
 
 function elementosDaLoja(listaDeItens, listaDeTrecos){
@@ -76,6 +79,7 @@ let tagDsr  = document.createElement("p")
 
 let tagButton  = document.createElement("button")
     tagButton.type = "text" 
+    tagButton.id = purchases.id
 
 
     tagNome.innerText = nome
@@ -99,25 +103,63 @@ return tagLi
 
 tagUlSecond.addEventListener("click", recebendoCliks)
 
-let productsCar = []
+let productsCarLitlle = []
 
 function recebendoCliks(event){
 
-    let tagButton = event.target
-    console.log(tagButton)
+    let carameloAzul = event.target.id
     
-    if(tagButton.tagNome == "button"){
+    if(carameloAzul !== ""){
+
+        let darkDwarf = listaDeItens[carameloAzul]
         
-        let idCard = tagButton.id 
-
-        let purchases = listaDeItens.find(function(purchases){
-
-            if(purchases.id == idCard && purchases.tag == true){
-
-                return purchases
-            }
-        })
+        productsCarLitlle.push(darkDwarf)
         
+        listMancos(productsCarLitlle, tagUlThird)
     }
 
+}
+
+function listMancos(productsCarLitlle, tunadoBiBi){
+
+        tagUlThird.innerHTML = ""
+
+        for(let i = 0; i < productsCarLitlle.length; i++){
+    
+            let solaDabota = productsCarLitlle[i]   
+            
+            let solaMao    = mancadasDaVida(solaDabota)
+
+            tunadoBiBi.appendChild(solaMao)
+            
+        }
+    }
+
+function mancadasDaVida(solaDabota){
+
+let nome  = solaDabota.nameItem
+    
+let imge  = solaDabota.img
+    
+let valor = solaDabota.value
+
+
+let tagLi  = document.createElement("li")
+
+let tagImg = document.createElement("img")
+
+let tagNome = document.createElement("nome")
+
+let tagValor = document.createElement("valor")
+
+let smallButton = document.createElement("button")
+    smallButton.innerText = "Remover do carrinho"
+
+    tagNome.innerText = nome
+    tagImg.src = `${imge}`
+    tagValor.innerText = `R$ ${valor}.`.replace(".",",")
+
+tagLi.append(tagImg, tagNome, tagValor)
+
+return tagLi
 }
