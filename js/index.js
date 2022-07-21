@@ -96,27 +96,32 @@ tagLi.append(tagNome, tagImag, tagValor, tagDsr, tagButton)
 return tagLi
 }
 
-tagUlSecond.addEventListener("click", interceptandoProduto)
-
-
-let comprasJacale = []
-
-function interceptandoProduto(event){
-   
-    let btnComprar  = event.target
+// let figo = 0
     
-    if(btnComprar.tagName == "BUTTON"){
+// divSomas.innerText =  somar()
 
-        let idProduto = btnComprar.id
+// function somar(){
+    
+//     for(let i = 0; i < carrinhoDeCompras.length; i++){
+        
+//         figo += carrinhoDeCompras[i].valor
 
-        let produto = produtos.find(function(produto){
+//     }
+//     return figo
+// }
 
-            if(produto.id == idProduto && produto.estoque == true){
-                return produto
-            }            
-        })
-        adicionarCarrinho(produto)
-    }
-}
+// let meLambuze = document.querySelector("ul")
 
 
+// function listarProdutos(listaProdutos, idVitrine, vitrine){
+//     for(let i = 0; i<listaProdutos.length; i++){
+        
+//         let produto             = listaProdutos[i]
+//         let idProduto = produto.id
+//         if(idProduto == idVitrine){
+//             let cardProduto    = testandoProdutos(produto)
+//             vitrine.appendChild(cardProduto)
+//         }
+//     }
+// }
+// listarProdutos(carrinhoDeCompras, "Produtos", meLambuze)

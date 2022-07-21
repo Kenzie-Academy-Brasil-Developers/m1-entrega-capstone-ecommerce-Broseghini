@@ -14,7 +14,7 @@ const listaDeItens = [
   {
     id: 1,
     img: "./img/PiratasCorazons.jpg",
-    nameItem: "camiseta dos Piratas corazons",
+    nameItem: "Camiseta dos Piratas corazons",
     description:
       "Camiseta dos piratas dos Corazons (Law)",
     value: 100.00,
