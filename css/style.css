@@ -1,6 +1,6 @@
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #f87070;
+    background-color: #9e7d7d;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,15 +21,15 @@ header nav ul{
 header nav ul li{
     margin: 0 10px;
     display: flex;
-    
+    cursor: pointer;
 }
 header nav ul li{
     color: black;
     text-decoration: none;
-    bottom: none;
 }
 header nav ul li:hover{
     color: rgb(188, 38, 38);
+    
 }
 main{
     float: left;
@@ -38,7 +38,6 @@ main{
 main ul{
     margin-top: 10px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 main ul li{
@@ -47,62 +46,51 @@ main ul li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 220px;
-    padding: 10px;
+    width: 170px;
+    padding: 15px;
     margin: 15px;
+}
+main ul li h2{
+    color: ghostwhite;
+    margin-top: 10px;
 }
 main ul li img{
     width: 128px;
     height: 128px;
     object-fit: fill;
 }
-main ul li div{
-    background-color:  #7f8bf6;
-    padding: 10px;
-}
-main ul li div span{
+main ul li.li{
     color: white;
     background-color: rgb(142, 101, 101); 
     padding: 0 10px;
-    
 }
-main ul li div.price{
-    color: darkred;
+main ul li p{
+   margin-top: 10px;
+   
+
+}
+main ul li p.price{
+    color: rgba(236, 241, 244, 0.905);
     font-weight: bold;
+    position: relative;
+    cursor: pointer;
 }
-/* main ul li div a{
-    text-decoration: none;
-    color: black;
-} */
-main ul li div:hover{
-    color: darkred;
+main ul li p:hover{
+    color: rgba(192, 204, 216, 0.924);
     text-decoration: underline;
 }
 main ul li:hover{
-    border: 1.5px solid darkred;
+    border: 2px solid darkred;
 }
-aside{
+main ul li button{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    border-radius: 10px 0px 10px 0px;
+    padding: 10px 10px;
+    margin-right: 5px;
 }
-button[type=text]{
+main ul li button[type=text]{
     border: none;
     padding: 5px 20px;
 }
-aside button{
-    border: none;
-    padding: 5px 10px;
-}
-aside ul{
-    background-color: grey;
-    width: 255px;
-    height: 350px;
-    list-style: none;
-    padding: 0px;
-}
-aside ul div{
-    width: 100%;
-    background-color: beige;
-    
-}
+

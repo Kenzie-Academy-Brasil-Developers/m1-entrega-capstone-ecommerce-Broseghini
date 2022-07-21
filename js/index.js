@@ -96,32 +96,28 @@ tagLi.append(tagNome, tagImag, tagValor, tagDsr, tagButton)
 return tagLi
 }
 
-// let figo = 0
+
+tagUlSecond.addEventListener("click", recebendoCliks)
+
+let productsCar = []
+
+function recebendoCliks(event){
+
+    let tagButton = event.target
+    console.log(tagButton)
     
-// divSomas.innerText =  somar()
-
-// function somar(){
-    
-//     for(let i = 0; i < carrinhoDeCompras.length; i++){
+    if(tagButton.tagNome == "button"){
         
-//         figo += carrinhoDeCompras[i].valor
+        let idCard = tagButton.id 
 
-//     }
-//     return figo
-// }
+        let purchases = listaDeItens.find(function(purchases){
 
-// let meLambuze = document.querySelector("ul")
+            if(purchases.id == idCard && purchases.tag == true){
 
-
-// function listarProdutos(listaProdutos, idVitrine, vitrine){
-//     for(let i = 0; i<listaProdutos.length; i++){
+                return purchases
+            }
+        })
         
-//         let produto             = listaProdutos[i]
-//         let idProduto = produto.id
-//         if(idProduto == idVitrine){
-//             let cardProduto    = testandoProdutos(produto)
-//             vitrine.appendChild(cardProduto)
-//         }
-//     }
-// }
-// listarProdutos(carrinhoDeCompras, "Produtos", meLambuze)
+    }
+
+}
