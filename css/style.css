@@ -98,25 +98,41 @@ aside button{
     border: none;
     padding: 5px 10px;
 }
-aside div ul li{
+/* aside div ul li{
     background-color: grey;
     width: 255px;
     height: 350px;
     list-style: none;
     padding: 0px;
-    background-color: black;
 }
 aside ul div{
     width: 100%;
     background-color: beige;
     
-}
+} */
 button{
     bottom: 1px;
     padding: 5px 10px;
 }
+.carrinho li{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 200px;
+    height: 30%;
+    border-radius: 5px;
+    border: solid pink 1px;
+}
+.carrinho li img{
+    width: 70px;
+    height: 60px;
+}
 .carrinho{
-    background-color: grey;
+    border: solid black 2px;
+    margin-top: 26px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
     width: 255px;
     height: 350px;
     list-style: none;
@@ -130,6 +146,20 @@ button{
     flex-direction: column;
     margin-top: 20px;
 
+}
+.track{
+    color: black;
+    font-size:  12px;
+    font-weight: 800;
+}
+.yellow{
+    font-size: 10px;
+    font-weight: bold;
+}
+.carrinho button{
+    width: 145px;
+    height: 30px;
+    padding: 4px;
 }
 
 
