@@ -29,14 +29,23 @@ let tagFourth = document.createElement("li")
     tagUlFirst.appendChild(tagFourth)
     tagFourth.innerText = "Figures"
 
+let tagAside    = document.createElement("aside")
+    
 let tagUlSecond = document.createElement("ul")
+    
+let tagDivPai   = document.createElement("div")
+    tagAside.appendChild(tagDivPai)
+
+let tagDivFilho = document.createElement("div")
+
 
 let tagUlThird  = document.createElement("ul")
-
-let tagMain     = document.createElement("main")
+    tagDivPai.append(tagDivFilho, tagUlThird)
+    tagUlThird.classList.add("carrinho")
+    
+    let tagMain     = document.createElement("main")
     tagBody.appendChild(tagMain)
-    tagMain.appendChild(tagUlSecond)
-    tagMain.appendChild(tagUlThird)
+    tagMain.append(tagUlSecond, tagDivPai)
 
 
 function elementosDaLoja(listaDeItens, listaDeTrecos){
@@ -145,21 +154,28 @@ let valor = solaDabota.value
 
 
 let tagLi  = document.createElement("li")
+    tagLi.classList.add("cards") 
 
 let tagImg = document.createElement("img")
+    tagImg.classList.add("list")
 
 let tagNome = document.createElement("nome")
+    tagNome.classList.add("track")
 
 let tagValor = document.createElement("valor")
+tagValor.classList.add("yellow")
 
-let smallButton = document.createElement("button")
-    smallButton.innerText = "Remover do carrinho"
+let tagSmallButton = document.createElement("button")
+    tagSmallButton.innerText = "Remover do carrinho"
 
     tagNome.innerText = nome
     tagImg.src = `${imge}`
     tagValor.innerText = `R$ ${valor}.`.replace(".",",")
 
-tagLi.append(tagImg, tagNome, tagValor)
+tagLi.append(tagImg, tagNome, tagValor, tagSmallButton)
 
 return tagLi
 }
+
+
+        

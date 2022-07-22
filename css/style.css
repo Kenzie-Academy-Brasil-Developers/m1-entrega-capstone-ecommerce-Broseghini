@@ -22,18 +22,16 @@ header nav ul li{
     margin: 0 10px;
     display: flex;
     cursor: pointer;
-}
-header nav ul li{
     color: black;
     text-decoration: none;
 }
 header nav ul li:hover{
     color: rgb(188, 38, 38);
-    
 }
 main{
     float: left;
-    width: 75%;
+    width: 1000px;
+    display: flex;
 }
 main ul{
     margin-top: 10px;
@@ -66,8 +64,6 @@ main ul li.li{
 }
 main ul li p{
    margin-top: 10px;
-   
-
 }
 main ul li p.price{
     color: rgba(236, 241, 244, 0.905);
@@ -93,4 +89,47 @@ main ul li button[type=text]{
     border: none;
     padding: 5px 20px;
 }
+aside{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+aside button{
+    border: none;
+    padding: 5px 10px;
+}
+aside div ul li{
+    background-color: grey;
+    width: 255px;
+    height: 350px;
+    list-style: none;
+    padding: 0px;
+    background-color: black;
+}
+aside ul div{
+    width: 100%;
+    background-color: beige;
+    
+}
+button{
+    bottom: 1px;
+    padding: 5px 10px;
+}
+.carrinho{
+    background-color: grey;
+    width: 255px;
+    height: 350px;
+    list-style: none;
+    padding: 0px;
+    overflow-y: auto;
+}
+.carrinho div{
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
 
